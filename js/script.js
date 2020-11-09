@@ -25,5 +25,36 @@ for (var proprieta in studente) {
 console.log("ex2");
 // -------------- ESERCIZIO 2 ------------------
 
+// creo array di oggetti
+var arrayStudenti = [
+
+  {
+    "nome": "Vincent",
+    "cognome": "Vega",
+    "eta": 40
+  },
+
+  {
+    "nome": "Marcellus",
+    "cognome": "Wallace",
+    "eta": 50
+  },
+
+  {
+    "nome": "Jules",
+    "cognome": "Winnfield",
+    "eta": 45
+  }
+
+]; // fine array
+
+// creo ciclo for con all'interno un ciclo for in a cui dico di stampare il nome ed il cognome
+// equivalente alla variabile i in quel momento
+
+for (var i = 0; i < arrayStudenti.length; i++) {
+   for (studente in arrayStudenti) {
+     console.log("nome e cognome studente: "  + arrayStudenti[i].nome,arrayStudenti[i].cognome);
+   }
+}
 
 // -------------- ESERCIZIO 2 ------------------
