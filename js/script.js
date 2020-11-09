@@ -58,3 +58,21 @@ for (var i = 0; i < arrayStudenti.length; i++) {
 }
 
 // -------------- ESERCIZIO 2 ------------------
+console.log("ex3");
+// -------------- ESERCIZIO 3 ------------------
+
+// creo un array oggetto e do alle proprieta il valore di quello che inserirà l'utente
+
+var inserisciStudente = {
+
+  "nome" : prompt("Inserisci il tuo nome"),
+  "cognome" : prompt("Inserisci il tuo cognome"),
+  "eta" : parseInt(prompt("Inserisci la tua età"))
+
+};
+
+arrayStudenti.push(inserisciStudente); // pusho l'array all'interno dell'array principale
+
+console.log("Array studenti: ",arrayStudenti); // stampo tutto l'array aggiornato
+
+// -------------- ESERCIZIO 3 ------------------
