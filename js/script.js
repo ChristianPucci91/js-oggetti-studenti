@@ -6,7 +6,7 @@
 // aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 
 // -------------- ESERCIZIO 1 ------------------
-console.log("ex1");
+
 // creo oggetto dichiarando una variabile
 
 var studente = {
@@ -24,7 +24,7 @@ for (var proprieta in studente) {
 }
 
 // -------------- ESERCIZIO 1 ------------------
-console.log("ex2");
+
 // -------------- ESERCIZIO 2 ------------------
 
 // creo array di oggetti
@@ -60,7 +60,7 @@ for (studente in arrayStudenti) {
 }
 
 // -------------- ESERCIZIO 2 ------------------
-console.log("ex3");
+
 // -------------- ESERCIZIO 3 ------------------
 
 // creo un array oggetto e do alle proprieta il valore di quello che inserirà l'utente
