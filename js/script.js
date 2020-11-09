@@ -17,8 +17,8 @@ var studente = {
 
 // stampo con un for in tutte le proprietà
 var ex1 = "";
+
 for (var proprieta in studente) {
-  console.log(proprieta + ": " + studente[proprieta]);
   ex1 += ("<h3>" + proprieta + ": " + studente[proprieta] + "</h3>");
   document.getElementById('ex1').innerHTML = ex1;
 }
@@ -50,22 +50,21 @@ var arrayStudenti = [
 
 ]; // fine array
 
-// creo ciclo for con all'interno un ciclo for in a cui dico di stampare il nome ed il cognome
-// equivalente alla variabile i in quel momento
+// creo un ciclo for in a cui dico di stampare il nome ed il cognome
+// equivalente alla variabile studente in quel momento dentro l'arrayStudenti
 var ex2 = "";
-// for (var i = 0; i < arrayStudenti.length; i++) {
-   for (studente in arrayStudenti) {
-     console.log("nome e cognome studente: "  + arrayStudenti[studente].nome,arrayStudenti[studente].cognome);
-     ex2 += ("<h3>" + "nome e cognome studente: "  + arrayStudenti[studente].nome + " " + arrayStudenti[studente].cognome + "</h3>");
-     document.getElementById('ex2').innerHTML = ex2;
-   }
-// }
+
+for (studente in arrayStudenti) {
+  ex2 += ("<h3>" + "nome e cognome studente: "  + arrayStudenti[studente].nome + " " + arrayStudenti[studente].cognome + "</h3>");
+  document.getElementById('ex2').innerHTML = ex2;
+}
 
 // -------------- ESERCIZIO 2 ------------------
 console.log("ex3");
 // -------------- ESERCIZIO 3 ------------------
 
 // creo un array oggetto e do alle proprieta il valore di quello che inserirà l'utente
+var ex3 = "";
 
 var inserisciStudente = {
 
@@ -77,6 +76,9 @@ var inserisciStudente = {
 
 arrayStudenti.push(inserisciStudente); // pusho l'array all'interno dell'array principale
 
-console.log("Array studenti: ",arrayStudenti); // stampo tutto l'array aggiornato
+for (studenti in arrayStudenti) {
+  ex3 += "<h3>" + "proprieta studente: "  + arrayStudenti[studenti].nome + " " + arrayStudenti[studenti].cognome + " " + arrayStudenti[studenti].eta + "</h3>";
+}
+document.getElementById('ex3').innerHTML = ex3;
 
 // -------------- ESERCIZIO 3 ------------------
