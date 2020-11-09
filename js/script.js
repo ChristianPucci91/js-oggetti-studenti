@@ -16,9 +16,11 @@ var studente = {
 };
 
 // stampo con un for in tutte le proprietà
-
+var ex1 = "";
 for (var proprieta in studente) {
   console.log(proprieta + ": " + studente[proprieta]);
+  ex1 += ("<h3>" + proprieta + ": " + studente[proprieta] + "</h3>");
+  document.getElementById('ex1').innerHTML = ex1;
 }
 
 // -------------- ESERCIZIO 1 ------------------
@@ -50,12 +52,14 @@ var arrayStudenti = [
 
 // creo ciclo for con all'interno un ciclo for in a cui dico di stampare il nome ed il cognome
 // equivalente alla variabile i in quel momento
-
-for (var i = 0; i < arrayStudenti.length; i++) {
+var ex2 = "";
+// for (var i = 0; i < arrayStudenti.length; i++) {
    for (studente in arrayStudenti) {
-     console.log("nome e cognome studente: "  + arrayStudenti[i].nome,arrayStudenti[i].cognome);
+     console.log("nome e cognome studente: "  + arrayStudenti[studente].nome,arrayStudenti[studente].cognome);
+     ex2 += ("<h3>" + "nome e cognome studente: "  + arrayStudenti[studente].nome + " " + arrayStudenti[studente].cognome + "</h3>");
+     document.getElementById('ex2').innerHTML = ex2;
    }
-}
+// }
 
 // -------------- ESERCIZIO 2 ------------------
 console.log("ex3");
