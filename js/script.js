@@ -65,12 +65,15 @@ for (studente in arrayStudenti) {
 
 // creo un array oggetto e do alle proprieta il valore di quello che inserirà l'utente
 var ex3 = "";
+var nuovoNome = prompt("Inserisci il tuo nome");
+var nuovoCognome = prompt("Inserisci il tuo cognome");
+var nuovoEta = prompt("Inserisci la tua età");
 
 var inserisciStudente = {
 
-  "nome" : prompt("Inserisci il tuo nome"),
-  "cognome" : prompt("Inserisci il tuo cognome"),
-  "eta" : parseInt(prompt("Inserisci la tua età"))
+  "nome" : nuovoNome,
+  "cognome" : nuovoCognome,
+  "eta" : nuovoEta
 
 };
 
